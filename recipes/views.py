@@ -5,7 +5,7 @@ from django.shortcuts import render
 
 
 def view_home(request):
-    return render(request, 'home.html')
+    return render(request, 'recipes/home.html')
 
 
 def view_sobre(request):
