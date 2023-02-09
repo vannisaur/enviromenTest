@@ -1,20 +1,24 @@
+<!--HEADER-->
 {% include 'recipes/partials/head.html' %}
 
 <body>
 
+    <!--HEADER-->
     {% include 'recipes/partials/header.html' %}
-    {% include 'recipes/partials/search.html' %}
 
+    <!--BARRA DE PESQUISA-->
+    {% include 'recipes/partials/search.html' %}
+    
     <main class="main-content-container">
         <div class="main-content main-content-list container">
-
+            <div class="recipe recipe-list-item">
+                <div class="recipe-cover">
+                    <img src="https://via.placeholder.com/1280x720.png/269fe6" alt="Temporário">
+                </div>
+            </div>
         </div>
     </main>
-
-    <h1><i class="fa-solid fa-user-secret"></i> - Nome: {{ nome }} <br>
-        <i class="fa-solid fa-calendar-days"></i> - Idade: {{ idade }}
-    </h1>
-
+    <!--EXEMPLO DE VARIAVEL E ÍCONES NO HTML
+        {% include 'recipes/partials/present.html' %}-->
 </body>
-
 </html>
