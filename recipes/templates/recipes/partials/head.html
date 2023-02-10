@@ -14,9 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css"
         integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css"
-        integrity="sha512-6mc0R607dibiCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google Fonts -->
 
@@ -183,6 +180,8 @@
             box-shadow: -5px 5px 10px rgba(0, 0, 0, .2);
             transition: all 300ms ease-in-out;
             transform: scale(1);
+            border-radius: .4rem;
+            overflow: hidden;
         }
 
 
@@ -207,6 +206,8 @@
 
         .recipe-author {
             padding: 0 var(--spacing-gutter-medium);
+            font-size: 1.2rem;
+            text-align: left;
 
         }
 
@@ -228,6 +229,39 @@
 
         .recipe-author a:hover {
             color: var(--color-primary-dark);
+        }
+
+        .recipe-meta-container {
+            display: flex;
+            flex-flow: row wrap;
+            padding: var(--spacing-gutter-medium);
+            background: var(--color-gray-1);
+        }
+
+        .recipe-meta {
+            display: flex;
+            flex-flow: column nowrap;
+            flex-shrink: 1;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .recipe-meta-title {
+            font-size: 1.6rem;
+        }
+
+        .recipe-footer a {
+            background: var(--color-primary-dark);
+            display: block;
+            color: var(--color-white);
+            text-decoration: none;
+            text-align: center;
+            padding: 1.5rem var(--spacing-gutter-medium);
+            transition: all 300ms ease-in-out;
+        }
+
+        .recipe-footer a:hover {
+            filter: brightness(2);
         }
     </style>
 </head>
